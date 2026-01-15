@@ -14,6 +14,14 @@
         <a href="#" class="logo">
             <span>Den</span>ise
         </a>
+
+        <!-- Bouton hamburger (mobile) -->
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
         <nav class="navbar">
             <a href="#" class="active">Portfolio</a>
             <a href="#">Services</a>
@@ -116,8 +124,41 @@
         <p class="copyright">
             &copy; 2025 Denise. Tous droits réservés.
     </footer>
-</body>
 
-</html>
+    <!-- Script pour le menu mobile -->
+    <script>
+        (function() {
+            const btn = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.navbar');
+            const links = nav.querySelectorAll('a');
+
+            if (!btn || !nav) return;
+
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!expanded));
+                btn.classList.toggle('open');
+                nav.classList.toggle('open');
+            });
+
+            // Fermer le menu quand on clique sur un lien
+            links.forEach(link => link.addEventListener('click', () => {
+                btn.setAttribute('aria-expanded', 'false');
+                btn.classList.remove('open');
+                nav.classList.remove('open');
+            }));
+
+            // Fermer/ouvrir en cas de redimensionnement pour garder un comportement cohérent
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 900) {
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.classList.remove('open');
+                    nav.classList.remove('open');
+                    nav.style.display = ''; // reset inline si nécessaire
+                }
+            });
+        })();
+    </script>
+</body>
 
 </html>

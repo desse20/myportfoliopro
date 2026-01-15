@@ -1,302 +1,631 @@
-                                                                                        * {
-                                                                                            margin: 0;
-                                                                                            padding: 0;
-                                                                                            box-sizing: border-box;
-                                                                                            font-family: 'Poppins', sans-serif;
-                                                                                            text-decoration: none;
-                                                                                            list-style: none;
-                                                                                        }
-                                                                                        
-                                                                                        html {
-                                                                                            scroll-padding-top: 80px;
-                                                                                            /* hauteur du header */
-                                                                                        }
-                                                                                        
-                                                                                        header {
-                                                                                            position: sticky;
-                                                                                            top: 0;
-                                                                                            left: 0;
-                                                                                            width: 100%;
-                                                                                            padding: 0 12%;
-                                                                                            background: #685369;
-                                                                                            backdrop-filter: blur(10px);
-                                                                                            display: flex;
-                                                                                            justify-content: space-between;
-                                                                                            align-items: center;
-                                                                                            z-index: 100;
-                                                                                            padding-bottom: 20px;
-                                                                                            height: 80px;
-                                                                                        }
-                                                                                        
-                                                                                        body {
-                                                                                            /*padding-top: 80px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-padding-top: 80px;
+    /* hauteur du header */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 12%;
+    background: #685369;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding-bottom: 20px;
+    height: 80px;
+}
+
+body {
+    /*padding-top: 80px;
                                                                                                 /* hauteur du header */
-                                                                                        }
-                                                                                        
-                                                                                        .logo {
-                                                                                            font-size: 25px;
-                                                                                            color: #fff;
-                                                                                            font-weight: 600;
-                                                                                            transition: 0.3s ease;
-                                                                                        }
-                                                                                        
-                                                                                        .logo:hover {
-                                                                                            color: #EFA48B;
-                                                                                            text-shadow: 0 0 25px #EFA48B, 0 0 50px #EFA48B;
-                                                                                            transform: scale(1.1);
-                                                                                        }
-                                                                                        
-                                                                                        span {
-                                                                                            color: #EFA48B;
-                                                                                        }
-                                                                                        
-                                                                                        .navbar a {
-                                                                                            font-size: 18px;
-                                                                                            color: #fff;
-                                                                                            font-weight: 500;
-                                                                                            margin: 0 20px;
-                                                                                            border-bottom: 3px solid transparent;
-                                                                                            transition: 0.3s ease;
-                                                                                        }
-                                                                                        
-                                                                                        .navbar a:hover,
-                                                                                        .navbar a.active {
-                                                                                            color: #EFA48B;
-                                                                                            border-bottom: 3px solid #EFA48B;
-                                                                                        }
-                                                                                        
-                                                                                        .contact {
-                                                                                            padding: 10px 20px;
-                                                                                            background-color: #DBD8B3;
-                                                                                            color: #685369;
-                                                                                            border: 2px solid transparent;
-                                                                                            border-radius: 8px;
-                                                                                            font-size: 16px;
-                                                                                            letter-spacing: 1px;
-                                                                                            font-weight: 600px;
-                                                                                            transition: 0.3s ease;
-                                                                                        }
-                                                                                        
-                                                                                        .contact:hover {
-                                                                                            background-color: #EFA48B;
-                                                                                            box-shadow: 0 0 2px #EFA48B;
-                                                                                            color: #fff;
-                                                                                        }
-                                                                                        
-                                                                                        .home {
-                                                                                            width: 100%;
-                                                                                            height: 100vh;
-                                                                                            background: rgba(241, 241, 241, 241);
-                                                                                            display: flex;
-                                                                                            align-items: center;
-                                                                                            gap: 7em;
-                                                                                            padding: 30px 12% 0;
-                                                                                        }
-                                                                                        
-                                                                                        .home-content {
-                                                                                            max-width: 800px;
-                                                                                        }
-                                                                                        
-                                                                                        .home-content h3 {
-                                                                                            font-size: 47px;
-                                                                                        }
-                                                                                        
-                                                                                        .home-content h1 {
-                                                                                            font-size: 62px;
-                                                                                            line-height: 1.2;
-                                                                                        }
-                                                                                        
-                                                                                        .home-content p {
-                                                                                            font-size: 18px;
-                                                                                            margin: 25px 0 30px;
-                                                                                        }
-                                                                                        
-                                                                                        .btn-box {
-                                                                                            width: 345px;
-                                                                                            display: flex;
-                                                                                            gap: 2em;
-                                                                                        }
-                                                                                        
-                                                                                        .btn1,
-                                                                                        .btn2 {
-                                                                                            padding: 10px 20px;
-                                                                                            background-color: #EFA48B;
-                                                                                            color: #fff;
-                                                                                            border: 2px solid transparent;
-                                                                                            border-radius: 8px;
-                                                                                            font-size: 18px;
-                                                                                            letter-spacing: 1px;
-                                                                                            font-weight: 600px;
-                                                                                            transition: 0.3s ease;
-                                                                                            cursor: pointer;
-                                                                                        }
-                                                                                        
-                                                                                        .btn1:hover,
-                                                                                        .btn2:hover {
-                                                                                            background-color: #DBD8B3;
-                                                                                            color: #685369;
-                                                                                        }
-                                                                                        
-                                                                                        .img-box img {
-                                                                                            border-radius: 50%;
-                                                                                            width: 350px;
-                                                                                        }
-                                                                                        
-                                                                                         ::-webkit-scrollbar {
-                                                                                            width: 1px;
-                                                                                        }
-                                                                                        
-                                                                                         ::-webkit-slider-thumb {
-                                                                                            background: #EFA48B;
-                                                                                        }
-                                                                                        
-                                                                                         ::-webkit-scrollbar-track {
-                                                                                            background: #fff;
-                                                                                            width: 50px;
-                                                                                        }
-                                                                                        
-                                                                                        .about {
-                                                                                            display: flex;
-                                                                                            justify-content: center;
-                                                                                            align-items: center;
-                                                                                            padding: 12% 8%;
-                                                                                            gap: items;
-                                                                                            background: #685369;
-                                                                                        }
-                                                                                        
-                                                                                        .about-img img {
-                                                                                            position: relative;
-                                                                                            width: 550px;
-                                                                                            box-shadow: 0 0 25px #EFA48B, 0 0 50px #EFA48B;
-                                                                                            border-radius: 50%;
-                                                                                        }
-                                                                                        
-                                                                                        .about-content h2 {
-                                                                                            text-align: left;
-                                                                                            color: white;
-                                                                                            font-size: 42px;
-                                                                                        }
-                                                                                        
-                                                                                        .about-content {
-                                                                                            margin-left: 20px;
-                                                                                            max-width: 600px;
-                                                                                        }
-                                                                                        
-                                                                                        .about-content h3 {
-                                                                                            font-size: 62px;
-                                                                                            color: #EFA48B;
-                                                                                        }
-                                                                                        
-                                                                                        .about-content p {
-                                                                                            color: white;
-                                                                                            font-size: 20px;
-                                                                                            margin: 2em
-                                                                                        }
-                                                                                        
-                                                                                        .contact-form h2 {
-                                                                                            text-align: center;
-                                                                                            margin-top: 3em;
-                                                                                            margin-bottom: 2em;
-                                                                                            font-size: 36px;
-                                                                                        }
-                                                                                        
-                                                                                        .contact-form form {
-                                                                                            max-width: 50em;
-                                                                                            margin: 1rem auto;
-                                                                                            text-align: center;
-                                                                                            margin-bottom: 3em;
-                                                                                        }
-                                                                                        
-                                                                                        .contact-form form .input-box {
-                                                                                            display: flex;
-                                                                                            justify-content: center;
-                                                                                            flex-wrap: wrap;
-                                                                                        }
-                                                                                        
-                                                                                        .contact-form form input,
-                                                                                        .contact-form form textarea {
-                                                                                            width: 100%;
-                                                                                            padding: 1.5em;
-                                                                                            font-size: 18px;
-                                                                                            background: rgba(241, 241, 241, 241);
-                                                                                            color: #333;
-                                                                                            border-radius: .8em;
-                                                                                            margin: 1rem 0;
-                                                                                            resize: none;
-                                                                                        }
-                                                                                        
-                                                                                        .footer {
-                                                                                            position: relative;
-                                                                                            bottom: 0;
-                                                                                            width: 100%;
-                                                                                            background: #685369;
-                                                                                            padding: 40px 0;
-                                                                                        }
-                                                                                        
-                                                                                        .footer .social-links {
-                                                                                            text-align: center;
-                                                                                            padding: 25px;
-                                                                                            color: #fff;
-                                                                                        }
-                                                                                        
-                                                                                        .footer .social-links a {
-                                                                                            font-size: 24px;
-                                                                                            color: #fff;
-                                                                                            border: 2px solid transparent;
-                                                                                            width: 40px;
-                                                                                            height: 40px;
-                                                                                            line-height: 38px;
-                                                                                            display: inline-block;
-                                                                                            text-align: center;
-                                                                                            border-radius: 50%;
-                                                                                            margin: 0 8px;
-                                                                                            box-shadow: inset 0 0 10px #EFA48B, 0 0 10px #EFA48B;
-                                                                                            transition: 0.3s ease;
-                                                                                        }
-                                                                                        
-                                                                                        .footer .social-links a:hover {
-                                                                                            color: #EFA48B;
-                                                                                            transform: scale(1.2)translateY(-10px);
-                                                                                            border: 2px solid #EFA48B;
-                                                                                        }
-                                                                                        
-                                                                                        .footer ul {
-                                                                                            margin-top: 0;
-                                                                                            padding: 0;
-                                                                                            font-size: 18e;
-                                                                                            line-height: 1.6;
-                                                                                            margin-bottom: 0;
-                                                                                            text-align: center;
-                                                                                        }
-                                                                                        
-                                                                                        .footer ul li {
-                                                                                            color: #fff;
-                                                                                            border-bottom: 3px solid transparent;
-                                                                                            transition: 0.3s ease;
-                                                                                        }
-                                                                                        
-                                                                                        .footer ul li:hover {
-                                                                                            border-bottom: 3px solid #EFA48B;
-                                                                                        }
-                                                                                        
-                                                                                        .footer ul li {
-                                                                                            display: inline-block;
-                                                                                            padding: 0 15px;
-                                                                                        }
-                                                                                        
-                                                                                        .footer ul .list {
-                                                                                            color: #fff;
-                                                                                            transition: 0.3s ease;
-                                                                                        }
-                                                                                        
-                                                                                        .footer ul li a {
-                                                                                            color: #fff;
-                                                                                            transition: 0.3s ease;
-                                                                                        }
-                                                                                        
-                                                                                        .footer .copyright {
-                                                                                            margin-top: 15px;
-                                                                                            text-align: center;
-                                                                                            color: #fff;
-                                                                                            font-size: 12px;
-                                                                                        }
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: #EFA48B;
+    text-shadow: 0 0 25px #EFA48B, 0 0 50px #EFA48B;
+    transform: scale(1.1);
+}
+
+span {
+    color: #EFA48B;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #EFA48B;
+    border-bottom: 3px solid #EFA48B;
+}
+
+.contact {
+    padding: 10px 20px;
+    background-color: #DBD8B3;
+    color: #685369;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600px;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: #EFA48B;
+    box-shadow: 0 0 2px #EFA48B;
+    color: #fff;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: rgba(241, 241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 47px;
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn1,
+.btn2 {
+    padding: 10px 20px;
+    background-color: #EFA48B;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn1:hover,
+.btn2:hover {
+    background-color: #DBD8B3;
+    color: #685369;
+}
+
+.img-box img {
+    border-radius: 50%;
+    width: 350px;
+}
+
+ ::-webkit-scrollbar {
+    width: 1px;
+}
+
+ ::-webkit-slider-thumb {
+    background: #EFA48B;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #fff;
+    width: 50px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: items;
+    background: #685369;
+}
+
+.about-img img {
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px #EFA48B, 0 0 50px #EFA48B;
+    border-radius: 50%;
+}
+
+.about-content h2 {
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content {
+    margin-left: 20px;
+    max-width: 600px;
+}
+
+.about-content h3 {
+    font-size: 62px;
+    color: #EFA48B;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    font-size: 36px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    background: rgba(241, 241, 241, 241);
+    color: #333;
+    border-radius: .8em;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #685369;
+    padding: 40px 0;
+}
+
+.footer .social-links {
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+}
+
+.footer .social-links a {
+    font-size: 24px;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px #EFA48B, 0 0 10px #EFA48B;
+    transition: 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #EFA48B;
+    transform: scale(1.2)translateY(-10px);
+    border: 2px solid #EFA48B;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18e;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li {
+    color: #fff;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li:hover {
+    border-bottom: 3px solid #EFA48B;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul .list {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.footer ul li a {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+/* ===== Ajouts responsives ===== */
+
+
+/* Reset utile */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Images/media adaptatifs */
+
+img,
+picture,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.25rem;
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    padding: 0.4rem 0.8rem;
+}
+
+.contact {
+    white-space: nowrap;
+}
+
+
+/* Section home */
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.home-content {
+    flex: 1;
+    min-width: 260px;
+}
+
+.img-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img-box img {
+    max-width: 420px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+/* About */
+
+.about {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+}
+
+.about-img,
+.about-content {
+    flex: 1;
+    min-width: 260px;
+}
+
+
+/* Formulaire */
+
+.contact-form form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.input-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-box input {
+    flex: 1;
+}
+
+
+/* Footer */
+
+.footer .list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* ===== Media queries ===== */
+
+
+/* Tablettes / petits écrans */
+
+@media (max-width: 900px) {
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 2rem 1rem;
+        gap: 1.25rem;
+    }
+    .home-content h1 {
+        font-size: 1.6rem;
+    }
+    .img-box img {
+        max-width: 320px;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .about-img img {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .input-box {
+        flex-direction: column;
+    }
+    header {
+        padding: 1rem;
+    }
+    .navbar {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .contact {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        align-items: center;
+    }
+}
+
+
+/* Mobiles */
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.75rem;
+    }
+    .logo {
+        font-size: 1.05rem;
+    }
+    .home-content h1 {
+        font-size: 1.25rem;
+    }
+    .home-content h3 {
+        font-size: 1rem;
+    }
+    .img-box img {
+        max-width: 260px;
+    }
+    .contact-form textarea {
+        min-height: 150px;
+    }
+    .footer .list {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .navbar a {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ===== Menu hamburger & responsive mobile improvements ===== */
+
+
+/* Bouton hamburger (caché sur grand écran) */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    gap: 6px;
+    width: 42px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px;
+}
+
+
+/* Les trois barres */
+
+.menu-toggle .bar {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+
+/* Animation pour état 'open' (croix) */
+
+.menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+/* Comportement de la navbar en mobile: cachée par défaut, affichée quand .open */
+
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .navbar {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        background: #685369;
+        padding: 1rem 12%;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        z-index: 90;
+        border-bottom: 1px solid rgba(239, 164, 139, 0.08);
+    }
+    .navbar.open {
+        display: flex;
+    }
+    .navbar a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1rem;
+        margin: 0;
+    }
+    /* Ajustements header pour mobile */
+    header {
+        padding: 0.6rem 4%;
+        height: auto;
+    }
+    .contact {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0 1rem;
+    }
+    /* Home : image et texte empilés (déjà géré) */
+}
+
+
+/* Mobile petit écran (améliorations supplémentaires) */
+
+@media (max-width: 480px) {
+    .home-content h3 {
+        font-size: 1rem;
+    }
+    .home-content h1 {
+        font-size: 1.15rem;
+    }
+    .img-box img {
+        max-width: 200px;
+    }
+    .btn-box {
+        width: 100%;
+        justify-content: center;
+    }
+    .btn-box .btn1,
+    .btn-box .btn2 {
+        width: 90%;
+    }
+    .about-img img {
+        width: 260px;
+    }
+    .about-content h3 {
+        font-size: 2rem;
+    }
+}
